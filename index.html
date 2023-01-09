@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CSV generator</title>
+  </head>
+  <body>
+    <h1><div id="scroll-container">
+      <div id="scroll-text">Work in progress!&nbsp &nbsp &nbspWork in progress!&nbsp &nbsp &nbspWork in progress!<div>
+    </div></h1>
+    <h1>FACSLink CSV Generator</h1>
+      <form>
+      <div class="formBoxSid">
+        <label for="sid">Sample ID (SID):</label>
+        <input
+          type="text"
+          id="sid"
+          value=""
+          onkeyup="enableAddBtn()"
+          placeholder="Input the Sample ID"
+        
+        />
+      </div>
+      <div class="formBoxLis">
+        <label for="lis">Assay LIS name&nbsp:</label>
+        <input
+          type="text"
+          id="lis"
+          value=""
+          onkeyup="enableAddBtn()"
+          placeholder="Input the LIS name"
+        />
+      </div>
+      <div class="btnAdd">
+        <button
+          type="button"
+          id="btnAdd"
+          onclick="enableGenerateBtn();disableAddBtn()"
+          disabled
+        ><b>Add</b>
+        </button>
+      </div>
+      <div class="btnGenerate">
+        <button type="button" id="btnGenerate" disabled><b>Generate CSV</b></button>
+      </div>
+      </form>
+      <div class="notes">
+      <p>NOTES:<br />- Clicking on the "Add" button adds a new row in the .csv file.<br />- For multiple LIS names, separate them with a comma "," and no spaces.<br />- The supported LIS names are: IMK, IMK_TC, 6CTBNK, 6CTBNK_TC<br />- Make sure that the Sample IDs match the ones on the sample rack.<br /></p>
+      </div>
+      <div class="toDo">
+      <p>
+        To-DO:<br />
+        - Clicking on the "Add" button creates a row in the csv file.<br />-
+        Multiple LIS names separated by commas.<br />- Improve styling.
+      </p>
+      </div>
+      <div class="signature">
+        <p>The Dev Testing Team &reg</p>
+      </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+    <script src="buttonFunc.js"></script>
+    <!-- <div class="noFloat"></div> -->
+  </body>
+</html>

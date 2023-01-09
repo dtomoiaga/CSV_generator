@@ -1,0 +1,150 @@
+/* .formBoxSid {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+}
+
+.formBoxLis {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.btnAdd {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+}
+
+.btnGenerate {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+}
+
+.notes {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+}
+
+.toDo {
+  position:relative()
+  height: 100px;
+  width: 300px;
+} */
+
+/* The top text scroll animation */
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+/* page styling - WHY THE FUCK IS THE GRADIENT DUPLICATING??*/
+body {
+  /* background: linear-gradient(
+    to bottom left,
+    rgb(216, 208, 208),
+    rgb(100, 100, 97)
+  ); */
+  background-color: rgb(134, 139, 139);
+  /* background-repeat: no-repeat; */
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 150px;
+  background: linear-gradient(rgb(216, 208, 208), rgb(215, 215, 211));
+  outline-color: rgb(137, 139, 143);
+}
+
+button {
+  background-color: rgb(137, 139, 143);
+}
+
+form {
+  position: absolute;
+  top: 250px;
+}
+
+.btnAdd {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+
+.btnGenerate {
+  position: absolute;
+  top: 2px;
+  left: 355px;
+  width: 70px;
+}
+
+.notes {
+  position: absolute;
+  top: 350px;
+  font-style: italic;
+}
+.toDo {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  font-style: italic;
+}
+.signature {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* .noFloat {
+  height: 0px;
+  clear: both;
+} */
