@@ -11,10 +11,68 @@
     <h1><div id="scroll-container">
       <div id="scroll-text">Work in progress!&nbsp &nbsp &nbspWork in progress!&nbsp &nbsp &nbspWork in progress!<div>
     </div></h1>
-    <h1>FACSLink CSV Generator</h1>
+    <!-- <h1>FACSLink CSV Generator</h1> -->
+    <div class="overlay"></div>
+
+    <div class="text">
+    
+      <div class="wrapper">
+        <div id="C" class="letter">C</div>
+        <div class="shadow">C</div>
+      </div>
+      <div class="wrapper">
+        <div id="S" class="letter">S</div>
+        <div class="shadow">S</div>
+      </div>
+      <div class="wrapper">
+        <div id="V" class="letter">V</div>
+        <div class="shadow">V</div>
+      </div>
+        <div class="wrapper">
+        <div id="&nbsp&nbsp" class="letter">&nbsp&nbsp</div>
+        <div class="shadow">&nbsp&nbsp</div>
+      </div>
+        <div class="wrapper">
+        <div id="G" class="letter">G</div>
+        <div class="shadow">G</div>
+      </div>
+        <div class="wrapper">
+        <div id="e" class="letter">e</div>
+        <div class="shadow">e</div>
+      </div>
+        <div class="wrapper">
+        <div id="n" class="letter">n</div>
+        <div class="shadow">n</div>
+      </div>
+        <div class="wrapper">
+        <div id="e" class="letter">e</div>
+        <div class="shadow">e</div>
+      </div>
+        <div class="wrapper">
+        <div id="r" class="letter">r</div>
+        <div class="shadow">r</div>
+      </div>
+        <div class="wrapper">
+        <div id="a" class="letter">a</div>
+        <div class="shadow">a</div>
+      </div>
+        <div class="wrapper">
+        <div id="t" class="letter">t</div>
+        <div class="shadow">t</div>
+      </div>
+        <div class="wrapper">
+        <div id="o" class="letter">o</div>
+        <div class="shadow">o</div>
+      </div>
+        <div class="wrapper">
+        <div id="r" class="letter">r</div>
+        <div class="shadow">r</div>
+      </div>
+    </div>
+    <div class="form" style="border-width: 20px; border-style: inset; border-color: rgb(97, 90, 90); padding: 5em;">
       <form>
       <div class="formBoxSid">
-        <label for="sid">Sample ID (SID):</label>
+        <label for="sid" style="font-size: x-large">Sample ID (SID):</label>
         <input
           type="text"
           id="sid"
@@ -25,7 +83,7 @@
         />
       </div>
       <div class="formBoxLis">
-        <label for="lis">Assay LIS name&nbsp:</label>
+        <label for="lis" style="font-size: x-large" >Assay LIS name&nbsp:</label>
         <input
           type="text"
           id="lis"
@@ -47,18 +105,9 @@
         <button type="button" id="btnGenerate" disabled><b>Generate CSV</b></button>
       </div>
       </form>
+    </div>
       <div class="notes">
-      <p>NOTES:<br />- Clicking on the "Add" button adds a new row in the .csv file.<br />- For multiple LIS names, separate them with a comma "," and no spaces.<br />- The supported LIS names are: IMK, IMK_TC, 6CTBNK, 6CTBNK_TC<br />- Make sure that the Sample IDs match the ones on the sample rack.<br /></p>
-      </div>
-      <div class="toDo">
-      <p>
-        To-DO:<br />
-        - Clicking on the "Add" button creates a row in the csv file.<br />-
-        Multiple LIS names separated by commas.<br />- Improve styling.
-      </p>
-      </div>
-      <div class="signature">
-        <p>The Dev Testing Team &reg</p>
+      <p style="border-width: 20px; border-style: outset; border-color: rgb(97, 90, 90); padding: 1em;">&rarr; Clicking on the "Add" button adds a new row in the .csv file. &larr;<br />&rarr; For multiple LIS names, separate them with a comma "," and no spaces. &larr;<br />&rarr; The supported LIS names are: IMK, IMK_TC, 6CTBNK, 6CTBNK_TC &larr;<br />&rarr; Make sure that the Sample IDs match the ones on the sample rack. &larr;<br /></p>
       </div>
     <!-- <script src="script.js"></script> -->
     <script src="script.js"></script>

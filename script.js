@@ -5,8 +5,9 @@ const csvData = [
 ["PID", "Name", "Sex", "DOB", "Location", "", "", "", "", "", "SID", "Collection", "Type", "Priority", "Physician", "Connection","", "", "", "", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", "Test", ],
 ["L1-P1","JohnDoe1","M","19720807","CJ","","","","","","","","","","DrBob","","","","","","","","","","","","","","","","","","","","","","","","",""]
 ]
-//function that will take the user input of SID and LIS name and add them to the empty object elements
 
+
+//function that will take the user input of SID and LIS name and add them to the empty object elements
 let sid = "";
 let lis = "";
 function generateSidLis(ev) {
@@ -26,11 +27,6 @@ function generateSidLis(ev) {
 
 
 // the csv maker function
-// let csvRows = "data:text/csv;charset=utf-8,";
-// csvData.forEach(function(csvData) {
-//     let row = csvData.join(",");
-//     csvRows += row + "\r\n";
-// });
 const csvmaker = function (csvData) {
     let csvRows = []; // empty array for storing data
     const headers = csvData[0];
